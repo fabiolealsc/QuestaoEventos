@@ -11,6 +11,17 @@ public class Main {
 				"fabio.leal.sc@gmail.com",
 				TipoIngresso.MEIO);
 		
+		Participante participante2 = new Participante(
+				"Braiam",
+				"algo.slguma.@gmail.com",
+				TipoIngresso.INTEIRO);
+		
+		Participante participante3 = new Participante(
+				"João",
+				"algo.slguma.@gmail.com",
+				TipoIngresso.MEIO);
+		
+		
 		Palestrante palestrante = new Palestrante(
 				"Manja muito de programação, Infraestrutura e de confeitaria",
 				"Como empreender em 2025",
@@ -32,6 +43,8 @@ public class Main {
 		
 		
 		eventoPrincipal.addParticipante(participante1);
+		eventoPrincipal.addParticipante(participante2);
+		eventoPrincipal.addParticipante(participante3);
 		
 		System.out.println(eventoPrincipal.toString());
 	}

@@ -31,11 +31,14 @@ public class Evento {
 		
 		String participantesString = "";
 		
+		int contador = 1;
+		
 		for(Participante participante : this.LstInscritos) {
-			participantesString = 
-					" Nome: " + participante.getNome() + 
-					" Email:" + participante.getEmail() + 
-					" Tipo de ingresso: " + participante.getTipoIngresso();  
+			participantesString += "\nParticipante " + contador + ":" +
+					"\n  Nome: " + participante.getNome() + 
+					"\n  Email:" + participante.getEmail() + 
+					"\n  Tipo de ingresso: " + participante.getTipoIngresso();  
+			contador++;
 		}
 		
 		
@@ -46,6 +49,6 @@ public class Evento {
 				"\n Tema da palestra: " + this.palestrante.getTemaDaPalestra() +
 				"\n Email do palestrante: " + this.palestrante.getEmail() +
 				"\n Biografia do Palestrante: " + this.palestrante.getBiografia() +
-				"\n Participantes{ " + participantesString + "}";
+				"\n Participantes{\n " + participantesString + "\n}";
 	}
 }
