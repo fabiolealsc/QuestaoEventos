@@ -14,7 +14,7 @@ public class Main {
 		Palestrante palestrante = new Palestrante(
 				"Manja muito de programação, Infraestrutura e de confeitaria",
 				"Como empreender em 2025",
-				"Geovan",
+				"Geovane",
 				"geovane@algumacoisa.com"
 				);
 		
