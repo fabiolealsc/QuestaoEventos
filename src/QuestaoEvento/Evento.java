@@ -34,21 +34,21 @@ public class Evento {
 		int contador = 1;
 		
 		for(Participante participante : this.LstInscritos) {
-			participantesString += "\nParticipante " + contador + ":" +
-					"\n  Nome: " + participante.getNome() + 
-					"\n  Email:" + participante.getEmail() + 
-					"\n  Tipo de ingresso: " + participante.getTipoIngresso();  
+			participantesString += "  Participante " + contador + ":" +
+					"\n    Nome: " + participante.getNome() + 
+					"\n    Email:" + participante.getEmail() + 
+					"\n    Tipo de ingresso: " + participante.getTipoIngresso() +"\n";  
 			contador++;
 		}
 		
 		
-		return "\n Descrição do evento: " + this.descricao +
-				"\n Local do evento: " + this.local +
-				"\n Data do evento: " + this.data.getTime() +
-				"\n Palestrante: " + this.palestrante.getNome() +
-				"\n Tema da palestra: " + this.palestrante.getTemaDaPalestra() +
-				"\n Email do palestrante: " + this.palestrante.getEmail() +
-				"\n Biografia do Palestrante: " + this.palestrante.getBiografia() +
-				"\n Participantes{\n " + participantesString + "\n}";
+		return "\n - Descrição do evento: " + this.descricao +
+				"\n - Local do evento: " + this.local +
+				"\n - Data do evento: " + this.data.getTime() +
+				"\n - Palestrante: " + this.palestrante.getNome() +
+				"\n - Tema da palestra: " + this.palestrante.getTemaDaPalestra() +
+				"\n - Email do palestrante: " + this.palestrante.getEmail() +
+				"\n - Biografia do Palestrante: " + this.palestrante.getBiografia() +
+				"\n - Participantes{\n " + participantesString + "}";
 	}
 }
